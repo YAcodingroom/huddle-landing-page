@@ -1,0 +1,165 @@
+/* main */
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+main {
+    margin: 2rem 4rem 0;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+article {
+    display: flex;
+}
+
+.mockups {
+    width: 60%;
+}
+
+.content {
+    margin: 4rem;
+    width: 40%;
+}
+
+#homepage h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#homepage p,
+#homepage button {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2rem;
+}
+
+#homepage button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px 3px hsl(257, 40%, 40%);
+    color: hsl(257, 40%, 49%);
+    display: block;
+    height: 3.5rem;
+    width: 12rem;
+}
+
+#homepage button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+/* footer */
+footer {
+    margin: 1rem 8rem;
+}
+
+.social-media {
+    text-align: end;
+}
+
+.social-media i {
+    border: 1px solid;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 0.8rem;
+}
+
+.fa-twitter,
+.fa-instagram {
+    padding: 10px;
+}
+
+.fa-facebook-f {
+    padding: 10px 13px;
+}
+
+.social-media i:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(142, 100%, 50%);
+    text-decoration: none;
+}
+
+/* responsive */
+@media (max-width: 1199px) {
+    main {
+        margin: 2rem 3rem 0;
+    }
+    .content {
+        margin: 2rem;
+    }
+
+    #homepage h1 {
+        font-size: 28px;
+    }
+
+    #homepage p,
+    #homepage button {
+        font-size: 14px;
+        margin-top: 1.5rem;
+    }
+
+    #homepage button {
+        border: 0;
+        border-radius: 30px;
+        height: 2.5rem;
+    }
+
+    .social-media {
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    article {
+        display: block;
+    }
+
+    article>div {
+        width: 100% !important;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .mockups img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .content {
+        margin: 3rem auto;
+        text-align: center;
+    }
+    #homepage h1 {
+        font-size: 22px;
+    }
+    #homepage button {
+        margin: 2rem auto;
+    }
+
+    footer {
+        margin: 0.5rem 4rem;
+    }
+
+}
